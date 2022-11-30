@@ -4,5 +4,5 @@ permalink: /reading
 layout: post-category
 pagination:
     enabled: true
-    collection: posts
+    category: reading
 ---

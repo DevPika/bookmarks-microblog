@@ -1,17 +1,11 @@
-<a href="{{ site.baseurl }}{{ post.url }}">
+<a href="{% if post.bookmark-url %}{{ post.bookmark-url }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}">
   <div class="card">
     <div class="card-content">
       <div class="media">
         <div class="media-left">
-          {% if post.image %}
-          <figure class="image is-64x64">
-              <img src="{{ post.image }}" alt="{{ post.title }}">
+          <figure class="icon is-large">
+            <i class="fa fa-bookmark fa-2x"></i>
           </figure>
-          {% else %}
-          <figure class="image is-64x64">
-              <img src="{% if site.favicon %} {{ site.favicon | relative_url }} {% else %} {{ site.baseurl }}/favicon.png {% endif %}" alt="{{ post.title }}">
-          </figure>
-          {% endif %}
         </div>
         <div class="media-content">
           <p class="title is-4">{{ post.title}}</p>

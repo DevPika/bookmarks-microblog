@@ -4,5 +4,5 @@ permalink: /listening
 layout: post-category
 pagination:
     enabled: true
-    collection: posts
+    category: listening
 ---
