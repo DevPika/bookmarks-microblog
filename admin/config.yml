@@ -16,8 +16,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Bookmark URL', name: 'bookmark-url', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list', required: 'false' }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'listening'
     label: 'Listening'
     folder: 'listening/_posts/'
@@ -30,5 +30,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Bookmark URL', name: 'bookmark-url', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list', required: 'false' }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
